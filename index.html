@@ -25,12 +25,21 @@
         .bg:hover{
             background-color: burlywood;
         }
+        .blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
     </style>
   </head>
   <body class="container">
     <h1>Join Class</h1>
-    <marquee direction="right"><h6>Click Class</h6></marquee>
+    <marquee direction="right" ><h6 class="blink_me">Click Class</h6></marquee>
     <table class="table">
         <thead>
           <tr>
@@ -79,6 +88,7 @@
           </tr>
         </tbody>
       </table>
+      
 
    
   </body>
