@@ -37,8 +37,26 @@
     }
 
     .bg:active {
-      animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+      /* animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both; */
+      animation-name:rainbow;
+      animation-duration: 2s;
+      animation-fill-mode: both;
 
+    }
+    @keyframes rainbow{
+      0%{
+        transform: rotate(0deg);
+        top:0px;
+        position: relative;
+      }
+      /* 50%{
+        transform: rotate(100deg);
+      } */
+      100%{
+        transform:rotate(360deg);
+        top:1000px;
+        position: relative;
+      }
     }
 
     .card:hover {
@@ -90,29 +108,11 @@
     table {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       animation: blinker 1s linear;
-      /* animation-name: tabclolo  ;
-      animation-duration: 2s; */
     }
 
-    @keyframes tabclolo {
-      0% {
-        background-color: aliceblue;
-      }
+    
 
-      10% {
-        background-color: rgb(45, 67, 87);
-
-      }
-
-      50% {
-        background-color: rgb(76, 70, 77);
-      }
-
-      100% {
-        background-color: rgb(255, 255, 255);
-      }
-
-    }
+    
   </style>
 </head>
 
